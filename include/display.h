@@ -1,30 +1,32 @@
+#pragma once
 #include <Arduino.h>
+
+enum class SystemState;
 
 class LEDController
 {
 private:
-    bool isOn = false;
-    uint8_t ledPin; //GPIO 35
-
+    uint8_t ledPin; // 35
+    bool isOn;
 public:
-    LEDController(uint8_t ledPin)
-        : ledPin(ledPin), isOn(false) {};
-
-    void *pinMode(uint8_t pin, uint8_t mode);
-    void *setup();
+    LEDController(uint8_t pin);
+    void begin();
+    void on();
+    void off();
+    void toggle();
+    bool state();
 };
 
-class OLEDController //uses I2C communication
+// screen, OLED, 128x64, I2C, GPIO 22 (SCL), GPIO 21 (SDA)
+class OLEDController
 {
-private:
-    bool isOn = false;
-    uint8_t SCLPin; //GPIO 22
-    uint8_t SDAPin; //GPIO 21
-
 public:
-    OLEDController(uint8_t SCLPin, uint8_t SDAPin)
-        : SCLPin(SCLPin), SDAPin(SDAPin), isOn(false) {};
-    void *setup();
-    void displayMessage(const char* message);
-
+    OLEDController();
+    void begin();
+    void clear();
+    void drawConnectionStatus();
+    void drawBootScreen();
+    void drawSignalStrength(int8_t rssi);
+    void drawStatus(SystemState state);
+    void drawShutdown();
 };
