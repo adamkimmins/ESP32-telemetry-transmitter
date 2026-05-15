@@ -47,4 +47,4 @@ with a user-controlled start/stop interface via onboard hardware button.
 \```
 
 ## Related
-- [C++ Satellite Telemetry Simulator](https://github.com/adamkimmins/satellite-telemetry-simulator) — the WSL2/desktop simulator
+- [C++ Satellite Telemetry Simulator](https://github.com/adamkimmins/satellite-telemetry-simulator) - the WSL2/desktop simulator
