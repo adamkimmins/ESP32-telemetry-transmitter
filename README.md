@@ -1,8 +1,6 @@
-# Satellite Telemetry Transmitter — ESP32 Heltec V4
+# Satellite Telemetry Transmitter - ESP32 Heltec V4
 
-> Real-time RF telemetry transmitter built on the Heltec WiFi LoRa 32 V4, 
-> designed as the embedded hardware counterpart to the 
-> [C++ Satellite Telemetry Simulator](https://github.com/adamkimmins/satellite-telemetry-simulator).
+Real-time RF telemetry transmitter built on the Heltec WiFi LoRa 32 V4
 
 ## Overview
 A PIO embedded systems project implementing a Finite State Machine 
