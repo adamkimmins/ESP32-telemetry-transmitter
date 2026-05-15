@@ -1,0 +1,5 @@
+/*
+Placeholder for Lipo battery management code. 
+
+This will include functions for reading battery voltage and calculating remaining capacity task.
+*/

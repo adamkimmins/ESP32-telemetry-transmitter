@@ -1,16 +1,6 @@
-// class CommunicationManager
-// {
-// public:
+/*
+Placeholder for our LoRa, Wifi, and Bluetooth communication code. 
 
-//     CommunicationManager();
-
-//     void begin();
-
-//     void CommunicationMode();
-
-//     void sendTelemetry();
-
-//     void receiveCommands();
-
-//     bool connected();
-// };
+This will include functions for the task of sending telemetry data to the ("ground") station GUI 
+ and receiving commands from the ground station.
+*/
