@@ -21,7 +21,7 @@ with a user-controlled start/stop interface via onboard hardware button.
 
 ### FSM State Model
    
-<img width="420" height="300" alt="fsm" src="https://github.com/user-attachments/assets/ef913d4a-8844-45aa-be83-d1ac48c86453" />
+<img width="170" height="130" alt="fsm" src="https://github.com/user-attachments/assets/ef913d4a-8844-45aa-be83-d1ac48c86453" />
   
 ### Class Design
 | Class | Responsibility |
